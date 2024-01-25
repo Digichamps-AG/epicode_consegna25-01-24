@@ -6,9 +6,8 @@ print(vini_dataset)
 #informazioni riassuntive del dataset
 print(vini_dataset.describe())
 
-#media
-media = vini_dataset.mean(numeric_only = True)
-print(media)
+#conteggio (non contenuto in describe)
+print(vini_dataset.count())
 
-#moda
+#moda (non contenuta in describe)
 moda = vini_dataset.mode(numeric_only=True)
